@@ -1,2 +1,9 @@
-# 2611COMP101904-Lap-trinh-Windows
-Bài tập thực hành và bài tập lớn môn Lập trình Windows (C# / .NET / WPF / WinForms).
+# 2611COMP101904 - Lập trình Windows
+
+## MSSV: 51.01.104.033
+
+## Họ và tên: Đặng Hoàng Bảo Huy
+
+## Lớp: 51.01.CNTT.C
+
+## Nhóm: 3
