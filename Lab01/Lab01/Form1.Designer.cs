@@ -167,6 +167,7 @@ namespace Lab01
             this.cboKhoaLop.Name = "cboKhoaLop";
             this.cboKhoaLop.Size = new System.Drawing.Size(260, 30);
             this.cboKhoaLop.TabIndex = 9;
+            this.cboKhoaLop.Tag = "";
             // 
             // btnXoa
             // 
