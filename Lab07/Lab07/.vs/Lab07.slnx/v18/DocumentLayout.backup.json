@@ -1,0 +1,40 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\BaoHuy\\HocTap\\HCMUE\\N\u0103m 2 - HK1\\LTW\\2611COMP101904-Lap-trinh-Windows\\Lab07\\Lab07\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9C7B6C8F-BEAD-4ED7-8A96-7CEC54781D7F}|Lab07.csproj|c:\\baohuy\\hoctap\\hcmue\\n\u0103m 2 - hk1\\ltw\\2611comp101904-lap-trinh-windows\\lab07\\lab07\\forms\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9C7B6C8F-BEAD-4ED7-8A96-7CEC54781D7F}|Lab07.csproj|solutionrelative:forms\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmMain.cs [Design]",
+              "DocumentMoniker": "C:\\BaoHuy\\HocTap\\HCMUE\\N\u0103m 2 - HK1\\LTW\\2611COMP101904-Lap-trinh-Windows\\Lab07\\Lab07\\Forms\\FrmMain.cs",
+              "RelativeDocumentMoniker": "Forms\\FrmMain.cs",
+              "ToolTip": "C:\\BaoHuy\\HocTap\\HCMUE\\N\u0103m 2 - HK1\\LTW\\2611COMP101904-Lap-trinh-Windows\\Lab07\\Lab07\\Forms\\FrmMain.cs [Design]",
+              "RelativeToolTip": "Forms\\FrmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T12:45:30.439Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
