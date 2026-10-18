@@ -1,0 +1,79 @@
+-- ============================================================================
+-- BÀI LAB BUỔI 11: ADO.NET VÀ CRUD VỚI SQL SERVER
+-- DATABASE SCRIPT & SAMPLE DATA: EduManagerDB
+-- ============================================================================
+
+USE master;
+GO
+
+IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = N'EduManagerDB')
+BEGIN
+    CREATE DATABASE EduManagerDB;
+END
+GO
+
+USE EduManagerDB;
+GO
+
+-- 1. BẢNG KHOA
+IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'KHOA')
+BEGIN
+    CREATE TABLE KHOA (
+        MaKhoa VARCHAR(10) PRIMARY KEY,
+        TenKhoa NVARCHAR(100) NOT NULL
+    );
+END
+GO
+
+-- 2. BẢNG LOP
+IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'LOP')
+BEGIN
+    CREATE TABLE LOP (
+        MaLop VARCHAR(10) PRIMARY KEY,
+        TenLop NVARCHAR(100) NOT NULL,
+        MaKhoa VARCHAR(10) NOT NULL,
+        CONSTRAINT FK_LOP_KHOA FOREIGN KEY (MaKhoa) REFERENCES KHOA(MaKhoa)
+    );
+END
+GO
+
+-- 3. BẢNG SINHVIEN (Ràng buộc khóa ngoại đến LOP)
+IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'SINHVIEN')
+BEGIN
+    CREATE TABLE SINHVIEN (
+        MaSV VARCHAR(10) PRIMARY KEY,
+        HoTen NVARCHAR(100) NOT NULL,
+        MaLop VARCHAR(10) NOT NULL,
+        CONSTRAINT FK_SINHVIEN_LOP FOREIGN KEY (MaLop) REFERENCES LOP(MaLop)
+    );
+END
+GO
+
+-- 4. DỮ LIỆU MẪU KHOA
+IF NOT EXISTS (SELECT 1 FROM KHOA WHERE MaKhoa = 'CNTT')
+    INSERT INTO KHOA (MaKhoa, TenKhoa) VALUES ('CNTT', N'Công nghệ Thông tin');
+IF NOT EXISTS (SELECT 1 FROM KHOA WHERE MaKhoa = 'TOAN')
+    INSERT INTO KHOA (MaKhoa, TenKhoa) VALUES ('TOAN', N'Toán - Tin học');
+IF NOT EXISTS (SELECT 1 FROM KHOA WHERE MaKhoa = 'VL')
+    INSERT INTO KHOA (MaKhoa, TenKhoa) VALUES ('VL', N'Vật lý');
+GO
+
+-- 5. DỮ LIỆU MẪU LOP
+IF NOT EXISTS (SELECT 1 FROM LOP WHERE MaLop = '2311COMP1')
+    INSERT INTO LOP (MaLop, TenLop, MaKhoa) VALUES ('2311COMP1', N'Lập trình Windows 01', 'CNTT');
+IF NOT EXISTS (SELECT 1 FROM LOP WHERE MaLop = '2311COMP2')
+    INSERT INTO LOP (MaLop, TenLop, MaKhoa) VALUES ('2311COMP2', N'Lập trình Web 02', 'CNTT');
+IF NOT EXISTS (SELECT 1 FROM LOP WHERE MaLop = '2311MATH1')
+    INSERT INTO LOP (MaLop, TenLop, MaKhoa) VALUES ('2311MATH1', N'Giải tích ứng dụng 01', 'TOAN');
+GO
+
+-- 6. DỮ LIỆU MẪU SINHVIEN
+IF NOT EXISTS (SELECT 1 FROM SINHVIEN WHERE MaSV = 'SV01')
+    INSERT INTO SINHVIEN (MaSV, HoTen, MaLop) VALUES ('SV01', N'Đặng Hoàng Bảo Huy', '2311COMP1');
+IF NOT EXISTS (SELECT 1 FROM SINHVIEN WHERE MaSV = 'SV02')
+    INSERT INTO SINHVIEN (MaSV, HoTen, MaLop) VALUES ('SV02', N'Nguyễn Thị Kim Ngân', '2311COMP1');
+IF NOT EXISTS (SELECT 1 FROM SINHVIEN WHERE MaSV = 'SV04')
+    INSERT INTO SINHVIEN (MaSV, HoTen, MaLop) VALUES ('SV04', N'Lê Hoàng Yến', '2311COMP2');
+IF NOT EXISTS (SELECT 1 FROM SINHVIEN WHERE MaSV = 'SV06')
+    INSERT INTO SINHVIEN (MaSV, HoTen, MaLop) VALUES ('SV06', N'Vũ Quốc An', '2311MATH1');
+GO
