@@ -1,0 +1,24 @@
+﻿=========================================================================================
+                         BÁO CÁO DANH SÁCH SINH VIÊN THEO LỚP
+ Ngày xuất: 24/10/2026 21:50:00
+=========================================================================================
+STT    | Mã SV    | Họ và tên              | Lớp học                  |  Điểm TB | Kết quả   
+-----------------------------------------------------------------------------------------
+1      | SV02     | Trần Thị Mai           | Công nghệ Thông tin 1    |      9.5 | Đạt       
+2      | SV12     | Phan Kim Ngân          | Toán - Tin học 1         |      9.2 | Đạt       
+3      | SV09     | Hoàng Thu Thảo         | Công nghệ Thông tin 2    |      9.0 | Đạt       
+4      | SV11     | Võ Quốc Huy            | Toán - Tin học 1         |      8.8 | Đạt       
+5      | SV01     | Nguyễn Văn An          | Công nghệ Thông tin 1    |      8.5 | Đạt       
+6      | SV06     | Đỗ Hải Yến             | Công nghệ Thông tin 2    |      8.0 | Đạt       
+7      | SV15     | Nguyễn Tiến Dũng       | Toán - Tin học 1         |      7.8 | Đạt       
+8      | SV08     | Đinh Gia Huy           | Công nghệ Thông tin 2    |      7.5 | Đạt       
+9      | SV05     | Vũ Thúy Hằng           | Công nghệ Thông tin 1    |      7.0 | Đạt       
+10     | SV04     | Phạm Minh Tuấn         | Công nghệ Thông tin 1    |      6.5 | Đạt       
+11     | SV14     | Lương Bảo Châu         | Toán - Tin học 1         |      6.0 | Đạt       
+12     | SV10     | Ngô Quang Khải         | Công nghệ Thông tin 2    |      5.5 | Đạt       
+13     | SV13     | Trịnh Minh Triết       | Toán - Tin học 1         |      4.5 | Không đạt 
+14     | SV03     | Lê Hoàng Long          | Công nghệ Thông tin 1    |      4.0 | Không đạt 
+15     | SV07     | Bùi Quốc Anh           | Công nghệ Thông tin 2    |      3.5 | Không đạt 
+-----------------------------------------------------------------------------------------
+ Tổng số sinh viên: 15 | Đạt: 12 | Không đạt: 3 | ĐTB: 7.03
+=========================================================================================
